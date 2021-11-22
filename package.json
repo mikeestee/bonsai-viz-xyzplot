@@ -1,0 +1,56 @@
+{
+    "name": "plotviz",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@fluentui/react": "^8.26.0",
+        "@types/jest": "^26.0.24",
+        "@types/node": "^16.3.1",
+        "@types/react": "^17.0.14",
+        "@types/react-dom": "^17.0.9",
+        "@types/three": "^0.130.0",
+        "axios": "^0.22.0",
+        "immer": "^9.0.6",
+        "microsoft-bonsai-visualizer": "file:../microsoft-bonsai-visualizer",
+        "nth-check": "^2.0.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "^4.0.3",
+        "semver": "^7.3.5",
+        "three": "^0.130.1",
+        "y18n": "^5.0.8"
+    },
+    "scripts": {
+        "lint": "eslint src/**/*.ts*",
+        "lint:fix": "eslint --fix src/**/*.ts*",
+        "start": "npm run lint && react-scripts start",
+        "build:libs": "pushd ../microsoft-bonsai-visualizer && npm install && npm run build && popd",
+        "build": "npm install && npm run lint && react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "devDependencies": {
+        "@types/semver": "^7.3.8",
+        "@typescript-eslint/eslint-plugin": "^4.28.3",
+        "@typescript-eslint/parser": "^4.28.3",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "typescript": "^4.3.5"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "homepage": "/plotviz"
+}
