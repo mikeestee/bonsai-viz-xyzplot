@@ -1,6 +1,10 @@
 # Bonsai XYZ Plot Visualizer
 
-This visualizer will let you plot any three state variables in 3 dimensions.
+This visualizer will let you plot any three state variables in 3 dimensions. You can specify default state variables for each like so:
+
+```
+http://localhost:3000/plotviz?x=cart_position&y=pole_center_position
+```
 
 ![XYZ Plot](XYZPlot.png)
 
